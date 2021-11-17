@@ -1,18 +1,18 @@
 //Global Variables 
 float buttonX, buttonY, buttonWidth, buttonHeight;
-color buttonColour, blue =#39CDF5, purple=#F05CCD, white=#FFFFFF, reset=white;
+color buttonColour, blue =#39CDF5, purple=#F05CCD, pink=#E59797, reset=pink;
 
 void setup() {
   fullScreen();
   //Population
-  buttonX = displayWidth*1/4;
-  buttonY = displayHeight*1/3;
-  buttonWidth = displayWidth*1/2;
-  buttonHeight = displayHeight*1/3;
+  buttonX = displayWidth*2/6;
+  buttonY = displayHeight*2/6;
+  buttonWidth = displayWidth*2/6;
+  buttonHeight = displayHeight*2/6;
 }//End setup 
 
 void draw() {
-  background(white);
+  background(pink);
   //println(mouseX, mouseY);
   if (mouseX>buttonX && mouseX<buttonX+buttonWidth && mouseY>buttonY && mouseY<buttonY+buttonHeight) { //Button Hoverover
     buttonColour = blue; //Hoverover
