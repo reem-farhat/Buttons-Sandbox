@@ -2,13 +2,14 @@
 float buttonX, buttonY, buttonWidth, buttonHeight;
 color buttonColour, blue =#39CDF5, purple=#F05CCD, black=#000000, reset=black;
 int titleX, titleY, titleWidth, titleHeight;
-String title = "im blue:)";
+String title = "im blueee:)";
+String words = "told youuu!";
 PFont titleFont;
 color violet = #A2027A, offwhite = #FFFFFF;
 void setup() {
   fullScreen();
   //
-  titleFont = createFont ("Centaur", 55);
+  titleFont = createFont ("High Tower Text", 100);
   //
   //Population
   buttonX = displayWidth*2/6;
@@ -24,7 +25,7 @@ void setup() {
 void draw() {
   background(black);
   //printin(mouseX, mouseY);
-    titleFont = createFont ("Bahnschrift", 69);
+    titleFont = createFont ("High Tower Text", 100);
     rect(titleX, titleY, titleWidth, titleHeight);
     fill(purple);
     textAlign(CENTER, CENTER);
@@ -36,7 +37,7 @@ void draw() {
     fill(buttonColour);
     rect(buttonX, buttonY, buttonWidth, buttonHeight);
     fill(reset);
-    text(title, titleX, titleY, titleWidth, titleHeight);
+    text(words, titleX, titleY, titleWidth, titleHeight);
   } else {
     buttonColour = purple;
     fill(buttonColour);
